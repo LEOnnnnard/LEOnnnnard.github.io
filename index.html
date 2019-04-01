@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html> 
+	<head>
+		<title>Columbia University EECS E4764 IoT Project Report #0</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
+							<h1 id="title">Smart Refrigerator</h1>
+							<p>Columbia University <br>
+								EECS E4764 Fall'18 Internet of Things<br>
+								Intelligent and Connected Systems<br>
+								Team 8 Project Report
+							</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Abstract</span></a></li>
+								<li><a href="#motivation" id="motivation-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Motivation</span></a></li>
+								<li><a href="#system" id="system-link" class="skel-layers-ignoreHref"><span class="icon fa-th">System</span></a></li>
+								<li><a href="#results" id="results-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Results</span></a></li>
+								<li><a href="#references" id="references-link" class="skel-layers-ignoreHref"><span class="icon fa-th">References</span></a></li>
+								<li><a href="#team" id="team-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Our Team</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/wTy-bbtwXb8" frameborder="0" allowfullscreen></iframe>
+								
+								<h2 class="alt">Smart Refrigerator</h2>
+								<p>Our smart refrigerator project is an IoT attempt to solve the problem of forgetting the food and their expiration date in the refrigerator. It can also remind people of their dietary structure. We use google vision analysis and machine learning to train the model,  which can automatically recognize the items put in or take out of the refrigerator. Besides, we use the gravity sensor to weigh the items. Based on the expiration data automatically generated or manually revised in the APP, the users will get a reminder if the food is going to expire. The APP will also generate a report on their dietary structure every week, which can help them adjust our recipe to have a healthier life.</p>
+				
+							<footer>
+								<a href="#motivation" class="button scrolly">Motivation</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="motivation" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Motivation</h2>
+							</header>
+
+							<p align="left">Sometimes when we are shopping in the supermarket, we will forget if there is any more food in our refrigerator. As a result, we need to know the information of food we store in the refrigerator even when we are not at home. Based on the gravity sensor in the refrigerator, we can have access to the data of specific food amount in the refrigerator. It will be easier for us to judge whether do we need to go to a market to buy more food.</p>
+							<!-- <article class="item">
+								<a href="#" class="image fit"><img src="images/image1.jpg" alt="" /></a>
+							</article> -->
+							<img src="images/image1.jpg" width="60%" height="60%">
+							
+							<p>Besides, after putting a few things in the refrigerator, we will forget them and let them expire, especially when we put things in the innermost place. To avoid the waste in this way, we invent this smart refrigerator to remind ourselves every item’s expiration date.</p>
+							<!-- <article class="item">
+								<a href="#" class="image fit"><img src="images/image2.jpg" alt="" /></a>
+							</article> -->
+							<img src="images/image2.jpg" width="40%" height="50%">
+							<p>Our project also gives us access to our dietary structure. Based on the data of the consumption of every item, we will get a weekly report to help us have a healthier diet.</p>
+							<!-- <article class="item">
+								<a href="#" class="image fit"><img src="images/image3.jpg" alt="" /></a>
+							</article> -->
+							<img src="images/image3.jpg" width="50%" height="50%">
+
+
+						</div>
+					</section>
+					
+					
+					<section id="system" class="three">
+						<div class="container">
+
+							<header>
+								<h2>System</h2>
+							</header>
+							
+							
+							
+							<p align="left">The system comprises of a force sensor resistor(FSR), a self-made gravity sensor, V2-8 camera and raspberry Pi 3. FSR performs as a button to touch off the camera. Once the food is put on the FSR, Raspberry Pi 3 will take a photo and uploads the food photo to the google cloud. Google cloud will use AotuML to classify the food and send back a label to the local Raspberry Pi 3. Then we use gravity sensor to weight foods.</p>
+							<p align="left">Both the label and the weight will be uploaded to MongoDB. We have an OLED screen to show these information. The screen can also show the local real-time weather. smart refrigerator will automatically create an expire data and remind you at specific day. We can also edit these data manually.</p>
+							<p align="left">With all of the data (label, weight and expire date), We can check the status of the food remaining in the refrigerator at any time, even in the grocery.</p>
+							<p align="left">We can also get a monthly food consumption sector chart, which can help us adjust our diet.</p>
+							
+							<h3 align="left">Architecture</h3>
+
+							<article class="item">
+								<header>
+									<h3>Architecture</h3>
+								</header>
+								<a href="#" class="image fit"><img src="images/image4.jpg" alt="" /></a>
+							</article>
+							
+							<h3 align="left">Technical Components</h3>
+
+							<p align="left">The smart refrigerator comprises of the three different part: hardware, Android app and web service. They are all low cost components and features.</p>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/image6.jpg" alt="" /></a>
+							</article>
+							
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/image7.jpg" alt="" /></a>
+							</article>
+
+							<p align="left">We use a carton box to represent the refrigerator. All the components are inside the box</p>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/image8.jpg" alt="" /></a>
+							</article>
+
+							<h3 align="left">Prototype</h3>
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/image9.jpg" alt="" /></a>
+								<header>
+										<h3>Smart Refrigerator</h3>
+								</header>
+							</article>
+							
+							<p align="left">The smart refrigerator and the app work in the following way. They solve all the problems we mention above.</p>
+							<p align="left">1. Put the item on the force sensor, which will trigger the camera.	The camera will take the photo of the item, upload the image to google cloud and using Google AutoML Vision model to recognize the item.</p>
+							<p align="left">2. The gravity sensor starts to weigh the item.</p>
+							<p align="left">3. The item’s name, weight and expiration date which generated based on the item automatically will be sent to mongodb.</p>
+							<p align="left">4.  The app will refresh all the data automatically. You can change the items’ expiration date manually.</p>
+							<p align="left">5. The app will send you reminder when the items’ expiration date is arriving.</p>
+							<p align="left">6. When you take out the item from the refrigerator, this item’s information will be erased from your app. The app will record this item’ consumption, which is the same as the weight of it when you put it in the refrigerator.</p>
+							<p align="left">7. You can check the items’ information(name, weight, expiration date) every time you want.</p>
+							<p align="left">8. The app will generate a report on your dietary structure every week based on the items’ weight that you consumed this week.</p>
+							
+							
+							
+						</div>
+					</section>
+					
+					
+					<section id="results" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Results</h2>
+							</header>
+							
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/image13.png" alt="" /></a>
+								<header>
+										<h3>Smart Refrigerator</h3>
+								</header>
+							</article>
+							
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/image10.jpg" alt="" /></a>
+										<header>
+											<h3>Android App Items page</h3>
+											<p>Including the information about label, weight, number, expire data. We can edit the expire date information.</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/image11.jpg" alt="" /></a>
+										<header>
+											<h3>Android App Consumption page</h3>
+											<p>We can generate a monthly food consumption sector chart and show it here.</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/image12.jpg" alt="" /></a>
+										<header>
+											<h3>OLED Screen</h3>
+											<p>Each time we put in or out the food. The content on oled screen will change, showing what we are doing. At normal time. The screen will show the local real-time weather</p>
+										</header>
+									</article>
+								</div>
+							</div>
+							
+						</div>
+					</section>
+					
+					<section id="references" class="three">
+						<div class="container">
+
+							<header>
+								<h2>References</h2>
+							</header>
+						<div align="left">
+							<a align="left">1. http://icsl.ee.columbia.edu/iot-class/2016fall/group8/</a><br>
+							<a align="left">2. https://edblogs.columbia.edu/eecse4764-001-2017-3/</a><br>
+							<a align="left">3. https://cloud.google.com/vision/automl/docs/</a><br>
+							<a align="left">4. https://aws.amazon.com/cn/documentation/gettingstarted/</a><br>
+							<a align="left">5. https://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/</a><br>
+							<a align="left">6. https://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/</a><br>
+							<a align="left">7. https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started</a><br>
+							<a align="left">8. https://www.instructables.com/id/Arduino-Bathroom-Scale-With-50-Kg-Load-Cells-and-H/</a><br>
+							<a align="left">9. https://tutorials-raspberrypi.com/digital-raspberry-pi-scale-weight-sensor-hx711/</a><br>
+							<a align="left">10. https://projects.raspberrypi.org/en/projects/physical-computing/15</a><br>
+							<a align="left">11. https://www.raspberrypi-spy.co.uk/2018/04/i2c-oled-display-module-with-raspberry-pi/</a><br>
+						</div>
+						</div>
+					</section>
+					
+
+				<!-- About Me -->
+					<section id="team" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Our Team</h2>
+							</header>
+
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/hongyuzou.png" alt="" /></a>
+										<header>
+											<h3>Hongyu Zou</h3>
+											<p>Columbia University Master Student Department of Electrical Engineering</p>
+											<p><a href="https://www.linkedin.com/in/hongyu-zou-1450a5155/">www.linkedin.com/in/hongyu-zou</a></p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/xiaoshengzhu4.png" alt="" /></a>
+										<header>
+											<h3>Xiaosheng Zhu</h3>
+											<p>Columbia University Master Student Department of Electrical Engineering</p>
+											<p><a href="http://linkedin.com/in/xiaosheng-zhu-1507b516a/">http://linkedin.com/in/xiaosheng-zhu</a></p>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/zhongtai.png" alt="" /></a>
+										<header>
+											<h3>Zhongtai Ren</h3>
+											<p>Columbia University Master Student Department of Electrical Engineering</p>
+											
+											<p><a href="https://www.linkedin.com/in/zhongtairen">www.linkedin.com/in/zhongtairen</a></p>
+										
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p align="left">
+								<strong>Hongyu Zou: </strong>hz2552@columbia.edu</br>
+								<strong>Xiaosheng Zhu: </strong>xz2743@columbia.edu</br>
+								<strong>Zhongtai Ren: </strong>zr2208@columbia.edu</br>
+							</br>
+								<strong>Columbia University </strong><a href="http://www.ee.columbia.edu">Department of Electrical Engineering</a><br>
+								<!-- <strong>Class Website:</strong>
+									<a href="https://edblogs.columbia.edu/eecs4764-001-2018-3/">Columbia University EECS E4764 Fall '18 IoT</a></br> -->
+								<strong>Instructor:</strong> <a href="http://fredjiang.com/">Professsor Xiaofan (Fred) Jiang</a>
+							</p>
+							
+
+							<!-- <form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form> -->
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; IoT Project | All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
